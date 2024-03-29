@@ -1,11 +1,15 @@
 import Image from "next/image";
 import Navbar from "@/Components/Navbar/Navbar";
-import styles from "./page.module.scss";
+import Hero from "@/Components/Hero/Hero";
+import Body from "@/Components/Body/Body";
 
 export default function Home() {
+  
   return (
     <main>
-      <Navbar/>
+      <Navbar />
+      <Hero />
+      <Body />
     </main>
   );
 }
