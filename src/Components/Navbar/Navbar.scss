@@ -1,0 +1,11 @@
+@import "../../styles/mixins";
+@import "../../styles/variables";
+
+.header {
+  background-color: black;
+  &__link-container {
+    @include mobile {
+      @include flex-row;
+    }
+  }
+}
