@@ -1,0 +1,14 @@
+@import "../../styles/mixins";
+@import "../../styles/variables";
+
+.hero {
+  background-color: black;
+  @include mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__title {
+    color: white;
+  }
+}
