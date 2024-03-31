@@ -8,7 +8,7 @@ const Hero = () => {
     <>
       <section className="hero">
         <div className="hero__container">
-          <div className="hero__image-wrapper">
+          <div className="hero__container-images">
             <Image
               className="hero__image"
               alt="Himalayan Bowl Lamp"
@@ -26,7 +26,7 @@ const Hero = () => {
           </div>
           <div className="hero__button-container">
             <button className="hero__button">
-              <h1 className="hero__button-text">View Events</h1>
+              <h2 className="hero__button-text">View Events</h2>
             </button>
           </div>
           {/* <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSwcGj5RMKbrjCZt_Cx0VlVpXyKchXbufwjQcNcAC-Omv9ZEcxXB1lrQwO8VQfOD80WII-1wc9FlFVI/pubhtml?widget=true&amp;headers=false"></iframe> */}

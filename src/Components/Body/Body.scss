@@ -1,6 +1,27 @@
 @import "../../styles/mixins";
 @import "../../styles/variables";
 
-.body{
-    background: linear-gradient(#000,#842A03);
+.body {
+  background: linear-gradient(#000, #842a03);
+  padding: 2rem;
+  &__title {
+    color: aliceblue;
+    padding: .3rem;
+  }
+  &__container {
+    @include mobile {
+      @include flex-center;
+    }
+  }
+  &__image-row {
+    display: flex;
+    justify-content: center;
+  }
+  &__image {
+    padding-top: 1rem;
+  }
+  &__paragraph{
+    padding: 1rem;
+    color:aliceblue;
+  }
 }
