@@ -3,27 +3,23 @@
 
 .hero {
   background-color: black;
-  @include mobile {
-    @include flex-center;
-  }
+
+  @include flex-center;
+
   &__title {
     color: white;
     padding: 1rem;
   }
   &__container-images {
-    @include mobile {
-      @include flex-center;
-    }
+    @include flex-center;
   }
   &__button {
     background-color: #e26a27;
     color: white;
     border: none;
-    padding: .5rem;
+    padding: 0.5rem;
     &-container {
-      @include mobile {
-        @include flex-center;
-      }
+      @include flex-center;
     }
   }
 }

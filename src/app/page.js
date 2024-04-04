@@ -4,10 +4,8 @@ import Hero from "@/Components/Hero/Hero";
 import Body from "@/Components/Body/Body";
 
 export default function Home() {
-  
   return (
     <main>
-      <Navbar />
       <Hero />
       <Body />
     </main>

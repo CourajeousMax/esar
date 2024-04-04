@@ -6,12 +6,10 @@
   padding: 2rem;
   &__title {
     color: aliceblue;
-    padding: .3rem;
+    padding: 0.3rem;
   }
   &__container {
-    @include mobile {
-      @include flex-center;
-    }
+    @include flex-center;
   }
   &__image-row {
     display: flex;
@@ -20,8 +18,11 @@
   &__image {
     padding-top: 1rem;
   }
-  &__paragraph{
+  &__paragraph {
     padding: 1rem;
-    color:aliceblue;
+    color: aliceblue;
+  }
+  &__subtext{
+    padding: 2rem;
   }
 }
