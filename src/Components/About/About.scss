@@ -1,0 +1,24 @@
+@import "../../styles/mixins";
+@import "../../styles/variables";
+
+.about {
+  &__container {
+    background: linear-gradient(#000, #842a03);
+    &-image{
+        @include flex-center;
+        padding: 2rem
+    }
+    &-item{
+        @include flex-center;
+        padding: 2rem;
+    }
+  }
+  &__color{
+    color: aliceblue;
+  }
+  &__image-container{
+    @include flex-center;
+    padding: 1rem;
+    gap: 2rem;
+  }
+}

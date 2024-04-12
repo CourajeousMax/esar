@@ -12,7 +12,7 @@ const Navbar = () => {
       <nav className="header__nav">
         <ul className="header__link-container">
           <Link href="/about">
-            About
+            <li className="header__nav-item nav-items">About</li>
           </Link>
           <Link href="/">
             <li className="header__nav-item nav-items">Events</li>
