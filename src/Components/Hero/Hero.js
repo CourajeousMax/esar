@@ -25,8 +25,8 @@ const Hero = () => {
             <h1 className="hero__title">Welcome to your spiritual home, Illuminate Your Space</h1>
           </div>
           <div className="hero__button-container">
-            <button className="hero__button">
-              <h2 className="hero__button-text">View Events</h2>
+            <button className="hero__button ">
+              <h2 className="hero__button-text ">View Events</h2>
             </button>
           </div>
           {/* <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSwcGj5RMKbrjCZt_Cx0VlVpXyKchXbufwjQcNcAC-Omv9ZEcxXB1lrQwO8VQfOD80WII-1wc9FlFVI/pubhtml?widget=true&amp;headers=false"></iframe> */}
