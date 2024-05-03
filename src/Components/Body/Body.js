@@ -5,6 +5,7 @@ import Lamps from "../../../public/assets/images/lamps.jpg";
 import Shop from "../../../public/assets/images/salt-shop.jpg";
 import Class from "../../../public/assets/images/cave_class.jpg";
 import ContactForm from "../ContactForm/ContactForm";
+import Footer from "../../Components/Footer/Footer";
 import React from "react";
 
 const Body = () => {
@@ -234,6 +235,7 @@ const Body = () => {
           </div>
         </form>
       </section>
+      <Footer />
     </>
   );
 };

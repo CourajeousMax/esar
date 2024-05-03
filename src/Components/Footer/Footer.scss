@@ -1,0 +1,23 @@
+.footer {
+  background-color: black;
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2rem;
+  }
+  &__address {
+    display: flex;
+    justify-content: center;
+    font-size: 0.8rem;
+    padding: 1rem;
+  }
+  &__email {
+    color: aliceblue;
+    text-decoration: none;
+  }
+  &__icon {
+    color: aliceblue;
+    font-size: 1rem;
+  }
+}
