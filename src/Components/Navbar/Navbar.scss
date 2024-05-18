@@ -1,12 +1,24 @@
 @import "../../styles/mixins";
 @import "../../styles/variables";
-
-.header {
+.nav{
   background-color: black;
+  @include desktop {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+  }
   &__link-container {
-    @include flex-row;
+    @include flex-row-between;
+    @include desktop {
+          display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 3rem;
+    }
   }
 }
+
+
 
 .nav-items {
   color: aliceblue;

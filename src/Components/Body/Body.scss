@@ -8,8 +8,23 @@
     color: aliceblue;
     padding: 0.3rem;
   }
-  &__container {
+  &__content {
     @include flex-center;
+    @include desktop {
+      @include flex-row-reverse;
+      gap: 6rem;
+    }
+  }
+  &__info-container {
+    @include desktop {
+      @include flex-row;
+      padding: 1rem;
+    }
+  }
+  &__container {
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
   }
   &__image-row {
     display: flex;
@@ -20,14 +35,32 @@
     &-container {
       @include flex-center;
       gap: 1rem;
+      @include desktop {
+        @include flex-row-reverse;
+      }
     }
+  }
+  &__nature-container {
+    padding: 2rem;
   }
   &__paragraph {
     padding: 1rem;
     color: aliceblue;
+    &-container {
+      display: flex;
+      flex-direction: column;
+      margin: 1rem;
+      @include desktop {
+        display: flex;
+        flex-direction: column;
+        margin: 4rem;
+      }
+    }
   }
-  &__subtext {
-    padding: 2rem;
+  &__text-container {
+    @include desktop {
+      padding: 2rem;
+    }
   }
 }
 
@@ -61,89 +94,83 @@ iframe {
   -ms-transform-origin: top left;
   transform-origin: top left;
 }
-.info{
-  &__subtitle{
-    color: #F8EBA7;
+.info {
+  &__subtitle {
+    color: #f8eba7;
   }
 }
-.button{
+.button,
+.events__button {
   font-size: 1.2rem;
-    margin-top: 24px;
-    border: none;
-    width: 8rem;
-    height: 5vh;
-    background-color: #E26A27;
-    color: white;
-    &:hover {
-      cursor: pointer;
-      box-shadow: 0px 0px 25px 0px rgb(178, 84, 7);
+  margin-top: 24px;
+  border: none;
+  width: 8rem;
+  height: 5vh;
+  background-color: #e26a27;
+  color: white;
+  &:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 25px 0px rgb(178, 84, 7);
+  }
 }
-}
-.fact{
-    background-color: aliceblue;
-    margin-top: 20px;
-    display: flex;
-    padding: 1rem;;
+.fact {
+  background-color: aliceblue;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  @include desktop {
+    width: 40%;
+    padding: 1rem;
+  }
 }
 .events {
   background: linear-gradient(#000, #842a03);
-  &__title{
-    padding: .5rem;
-    &-container{
+  &__title {
+    padding: 0.5rem;
+    &-container {
       padding: 3rem;
     }
   }
-  &__frame {
-     box-shadow: 5px 5px 10px orangered, -7px -4px 4px orange;
-    
-  }
-  &__button{
-    font-size: 1.2rem;
-    margin-top: 24px;
-    border: none;
-    width: 8rem;
-    height: 5vh;
-    background-color: #E26A27;
-    color: white;
-    &:hover {
-      cursor: pointer;
-      box-shadow: 0px 0px 25px 0px rgb(178, 84, 7);
+  &__fact {
+    @include desktop {
+      padding: 1rem;
+      &-container {
+        width: 30%;
+      }
     }
   }
 }
 .contact {
-  min-height: calc(100vh - 25rem);
-  padding-top: 3rem;
-@include flex-center;
+  min-height: calc(100vh - 60rem);
+  padding: 3rem;
+  @include flex-row;
   @include desktop {
-    flex-direction: row;
-  }
-  &__image {
-    width: 50%;
-    height: 50%;
+    padding: 3rem;
   }
   &__border {
     border-top: 4px solid #323232;
     height: 8rem;
-    @include desktop {
-      border-left: 4px solid #323232;
-      height: 8rem;
-    }
   }
   &__form {
-@include flex-center;
+    @include flex-center;
     gap: 1.5rem;
     width: 24rem;
+    height: 35rem;
     padding: 2rem;
     background-color: #fff;
     box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.6);
-      &--text {
-        font-size: 1.2rem;
-      }
+    &--text {
+      font-size: 1.2rem;
     }
   }
-
-  input {
+}
+@media only screen and (max-width: 767px) {
+  .contact__image {
+    display: none;
+  }
+}
+input {
   width: 100%;
   padding: 12px;
   border: 1px solid #ccc;

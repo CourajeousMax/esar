@@ -21,6 +21,24 @@
   justify-content: space-evenly;
 }
 
+@mixin flex-row-between {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+@mixin flex-row-reverse {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-evenly;
+}
+
+
+@mixin flex-justify-center {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
 @mixin flex-center {
   display: flex;
   flex-direction: column;

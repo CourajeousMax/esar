@@ -1,9 +1,12 @@
 import "../Body/Body.scss";
-import FilterVintageIcon from "@mui/icons-material/FilterVintage";
+import TipsAndUpdatesIcon from "@mui/icons-material/TipsAndUpdates";
 import Image from "next/image";
+import Hand from "../../../public/assets/images/hand-salt.jpg"
+import Desk from "../../../public/assets/images/lamp-desk.jpg";
 import Lamps from "../../../public/assets/images/lamps.jpg";
 import Shop from "../../../public/assets/images/salt-shop.jpg";
 import Class from "../../../public/assets/images/cave_class.jpg";
+import Candle from "../../../public/assets/images/candle.jpg";
 import ContactForm from "../ContactForm/ContactForm";
 import Footer from "../../Components/Footer/Footer";
 import React from "react";
@@ -13,30 +16,22 @@ const Body = () => {
   return (
     <>
       <section className="body">
-        <div className="body__container">
-          <div className="body__header-container">
-            <h2 className="body__header body__title">Soothing Salts </h2>
-          </div>
-          <div className="body__subheader-container">
-            <h3 className="body__subheader body__title">Why Salt? </h3>
-          </div>
-          <div className="body__image-container">
-            <ul className="body__image-grid">
-              <li className="body__image-row">
-                <Image
-                  className="body__image"
-                  alt="three salt lamps in a row"
-                  src={Lamps}
-                  quality={75}
-                  size="50vw"
-                  style={{
-                    width: "50%",
-                    height: "auto",
-                  }}
-                />{" "}
-              </li>
-
-              {/* <li className="body__image-row">
+        <div className="body__info-container">
+          <ul className="body__image-grid">
+            <li className="body__image-row">
+              <Image
+                className="body__image"
+                alt="three salt lamps in a row"
+                src={Lamps}
+                quality={75}
+                size="50vw"
+                style={{
+                  width: "50%",
+                  height: "auto",
+                }}
+              />{" "}
+            </li>
+            <li className="body__image-row">
               <Image
                 alt="pouring himalayan salt into hand"
                 src={Hand}
@@ -60,8 +55,15 @@ const Body = () => {
                   height: "auto",
                 }}
               />
-            </li> */}
-            </ul>
+            </li>
+          </ul>
+          <div className="body__container">
+            <div className="body__header-container">
+              <h2 className="body__header body__title">Soothing Salts </h2>
+            </div>
+            <div className="body__subheader-container">
+              <h3 className="body__subheader body__title">Why Salt? </h3>
+            </div>
             <div className="body__text-container">
               <p className="body__text  body__paragraph">
                 Your skin is an excretory organ that mirrors the condition of your intestines. When you take a salt water (brine) bath, the salt
@@ -72,6 +74,7 @@ const Body = () => {
             </div>
             <div className="body__subtext-container">
               <p className="body__subtext fact ">
+                <TipsAndUpdatesIcon />
                 WARNING: While brine baths have a positive effect on many ailments, they are also demanding on your circulatory system. If you suffer
                 from weak or poor heart circulation, always consult your doctor first.
               </p>
@@ -115,9 +118,8 @@ const Body = () => {
             </p>
           </div>
         </div>
-        <div className="body__nature-container">
+        
           <div className="body__content">
-            <h2 className="body__title">Nature's Healing Happiness</h2>
             <div className="body__image-container">
               <Image
                 alt="Salty Aire Retreat Shop"
@@ -125,7 +127,7 @@ const Body = () => {
                 quality={75}
                 size="50vw"
                 style={{
-                  width: "50%",
+                  width: "80%",
                   height: "auto",
                 }}
               />
@@ -140,19 +142,22 @@ const Body = () => {
                 }}
               />
             </div>
-            <p className="body__paragraph">
-              Himalayan Pink Salt Lamps (HSL) are celebrated for their natural healing properties and their ability to enhance overall well-being.
-              These remarkable creations of nature offer a multitude of benefits for our lives. HSL function as air purifiers by utilizing hygroscopic
-              properties to attract and trap contaminated water molecules from the environment, effectively removing cigarette smoke, dust, allergens,
-              and other pollutants. As the lamp heats up from the incandescent light source, the trapped particles remain locked in the salt crystal.
-              This purification process significantly reduces allergy symptoms and can even benefit individuals with asthma.
-            </p>
-            <p className="body__paragraph">
-              Moreover, HSL release negative ions, which promote healthier breathing by enhancing cilia activity and filtering foreign particles,
-              potentially safeguarding against airborne germs. These negative ions can also boost energy levels, akin to the invigorating effects of
-              spending time in natural settings rich in negative ions, counteracting the draining impact of positive ions on our bodies.
-            </p>
-          </div>
+            <div className="body__paragraph-container">
+                  <h2 className="body__title">Nature's Healing Happiness</h2>
+              <p className="body__paragraph">
+                Himalayan Pink Salt Lamps (HSL) are celebrated for their natural healing properties and their ability to enhance overall well-being.
+                These remarkable creations of nature offer a multitude of benefits for our lives. HSL function as air purifiers by utilizing
+                hygroscopic properties to attract and trap contaminated water molecules from the environment, effectively removing cigarette smoke,
+                dust, allergens, and other pollutants. As the lamp heats up from the incandescent light source, the trapped particles remain locked in
+                the salt crystal. This purification process significantly reduces allergy symptoms and can even benefit individuals with asthma.
+              </p>
+              <p className="body__paragraph">
+                Moreover, HSL release negative ions, which promote healthier breathing by enhancing cilia activity and filtering foreign particles,
+                potentially safeguarding against airborne germs. These negative ions can also boost energy levels, akin to the invigorating effects of
+                spending time in natural settings rich in negative ions, counteracting the draining impact of positive ions on our bodies.
+              </p>
+            </div>
+          
         </div>
       </section>
       <section className="info">
@@ -187,16 +192,16 @@ const Body = () => {
       <section className="events">
         <div className="events__title-container">
           <h2 className="events__title">Events</h2>{" "}
-          <iframe
+          {/* <iframe
             className="events__frame"
             src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSwcGj5RMKbrjCZt_Cx0VlVpXyKchXbufwjQcNcAC-Omv9ZEcxXB1lrQwO8VQfOD80WII-1wc9FlFVI/pubhtml?widget=true&amp;headers=false"
             width=" 140%"
             height="1050vh"
             overflow="auto"
             frameborder="0"
-          ></iframe>
+          ></iframe> */}
           <div className="events__fact-container fact">
-            <FilterVintageIcon />
+            <TipsAndUpdatesIcon />
             <p className="events__fact">
               Thank you for considering us! Feel free to contact us at{" "}
               <strong>
@@ -208,7 +213,7 @@ const Body = () => {
             </p>
           </div>
           <div className="events__fact-container fact">
-            <FilterVintageIcon />
+            <TipsAndUpdatesIcon />
             <p className="events__fact">
               Please remember to wear socks at all times inside the cave and bring a blanket and/or comfy clothes as it can get cold! Food and drinks
               are not permitted inside the cave. Thank you!
@@ -234,6 +239,18 @@ const Body = () => {
             </button>
           </div>
         </form>
+        <Image
+          alt="Candle"
+          src={Candle}
+          quality={75}
+          size="25vw"
+          className="contact__image
+          "
+          style={{
+            width: "25%",
+            height: "auto",
+          }}
+        />
       </section>
       <Footer />
     </>

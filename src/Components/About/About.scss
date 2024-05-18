@@ -6,7 +6,7 @@
     background: linear-gradient(#000, #842a03);
     &-image{
         @include flex-center;
-        padding: 2rem
+        padding: 2rem;
     }
     &-item{
         @include flex-center;
