@@ -1,0 +1,52 @@
+@import "../../styles/mixins";
+@import "../../styles/variables";
+
+.footer {
+  background-color: black;
+  padding: 1rem;
+  &__label {
+    @include flex-center;
+    gap: 0.8rem;
+  }
+  &__container{
+    @include flex-center;
+    margin-bottom: 60px;
+  }
+  &__subtext {
+    color: aliceblue;
+    text-decoration: none;
+  }
+  &__icon {
+    color: aliceblue;
+    font-size: 1rem;
+    &-container {
+      @include flex-center;
+      background-color: #2d0801;
+      width: 50%;
+      padding: 1rem;
+      gap: 1rem;
+      border-radius: 20px 0px 20px 0px;
+      box-shadow: 20px 0px 0px rgba(254, 229, 181, 0.08);
+    }
+  }
+}
+
+@media only screen and (min-width: 769px) and (min-width: 1281px) {
+  .footer__card {
+    display: flex;
+    justify-content: flex-start;
+    gap: 1rem;
+  }
+  .footer__label {
+    @include flex-row;
+  }
+  .footer__icon-container {
+    display: flex;
+    align-items: center;
+    width: 20%;
+    padding: 1rem;
+    gap: 1rem;
+    border-radius: 20px 0px 20px 0px;
+    box-shadow: 20px 0px 0px rgba(254, 229, 181, 0.08);
+  }
+}

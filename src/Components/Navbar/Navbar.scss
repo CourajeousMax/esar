@@ -1,11 +1,33 @@
 @import "../../styles/mixins";
 @import "../../styles/variables";
-
-.header {
+.nav{
   background-color: black;
+  @include desktop {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+  }
   &__link-container {
-    @include mobile {
-      @include flex-row;
-    }
+    @include flex-row-between;
+    @include desktop {
+          display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 3rem;
+  }
+}
+}
+
+
+
+.nav-items {
+  color: aliceblue;
+  list-style: none;
+  padding-bottom: .5rem;
+    text-decoration: none;
+  transition: text-decoration 0.3s;
+  &:hover {
+    border-bottom: 4px solid #fff;
+    cursor: pointer;
   }
 }
