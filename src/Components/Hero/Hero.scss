@@ -1,5 +1,5 @@
 @import "../../styles/mixins";
-@import "../../styles/variables";
+
 
 .hero, .hero__container-images, .hero__button-container, .hero__header-container {
   @include flex-center;
