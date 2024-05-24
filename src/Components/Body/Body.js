@@ -3,7 +3,7 @@ import "../Body/Body.scss";
 import TipsAndUpdatesIcon from "@mui/icons-material/TipsAndUpdates";
 import Image from "next/image";
 import Shop from "../../../public/assets/images/salt-shop.jpg";
-import Class from "../../../public/assets/images/cave_class.jpg";
+import Class from "../../../public/assets/images/cave-class.jpg";
 import Candle from "../../../public/assets/images/candle.jpg";
 import ContactForm from "../ContactForm/ContactForm";
 import Footer from "../../Components/Footer/Footer";
