@@ -10,13 +10,16 @@ const Navbar = () => {
         <h1 className="header__logo">Esmeralda's Salty Air Retreat</h1>
       </Link>
       <ul className="nav__link-container">
-        {/* <Link
+        <Link href="/">
+          <li className="nav__nav-item nav-items">Home</li>
+        </Link>
+        <Link
           href="https://squareup.com/appointments/book/8c805443-b0f7-4e3a-b3fe-40e11b7419f5/ZTP8PZRX5ME1Y/start"
           target="_blank"
           rel="noopener noreferrer"
         >
           <li className="nav__nav-item nav-items">Book Now</li>
-        </Link> */}
+        </Link>
         <Link href="/about">
           <li className="nav__nav-item nav-items">About</li>
         </Link>

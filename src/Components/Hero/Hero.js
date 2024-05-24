@@ -17,7 +17,7 @@ const Hero = () => {
               quality={75}
               size="50vw"
               style={{
-                width: "50%",
+                width: "45vh",
                 height: "auto",
               }}
             />

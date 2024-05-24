@@ -21,7 +21,7 @@
     font-size: 1rem;
     &-container {
       @include flex-center;
-      background-color: #17262b;
+      background-color: #2d0801;
       width: 50%;
       padding: 1rem;
       gap: 1rem;
@@ -43,7 +43,6 @@
   .footer__icon-container {
     display: flex;
     align-items: center;
-    background-color: #17262b;
     width: 20%;
     padding: 1rem;
     gap: 1rem;

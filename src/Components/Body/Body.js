@@ -1,8 +1,6 @@
 import "../Body/Body.scss";
 import TipsAndUpdatesIcon from "@mui/icons-material/TipsAndUpdates";
 import Image from "next/image";
-import Hand from "../../../public/assets/images/hand-salt.jpg"
-import Desk from "../../../public/assets/images/lamp-desk.jpg";
 import Lamps from "../../../public/assets/images/lamps.jpg";
 import Shop from "../../../public/assets/images/salt-shop.jpg";
 import Class from "../../../public/assets/images/cave_class.jpg";
@@ -10,6 +8,7 @@ import Candle from "../../../public/assets/images/candle.jpg";
 import ContactForm from "../ContactForm/ContactForm";
 import Footer from "../../Components/Footer/Footer";
 import React from "react";
+import Video from "../Video/Video";
 
 const Body = () => {
   const bookingUrl = "https://squareup.com/appointments/book/8c805443-b0f7-4e3a-b3fe-40e11b7419f5/ZTP8PZRX5ME1Y/start";
@@ -18,6 +17,8 @@ const Body = () => {
       <section className="body">
         <div className="body__info-container">
           <ul className="body__image-grid">
+       
+
             <li className="body__image-row">
               <Image
                 className="body__image"
@@ -30,31 +31,17 @@ const Body = () => {
                   height: "auto",
                 }}
               />{" "}
-            </li>
-            <li className="body__image-row">
-              <Image
-                alt="pouring himalayan salt into hand"
-                src={Hand}
-                quality={75}
-                size="50vw"
-                style={{
-                  width: "50%",
-                  height: "auto",
-                }}
-              />{" "}
-            </li>
-
-            <li className="body__image-row">
-              <Image
-                alt="himalayan salt lamp on desk"
-                src={Desk}
-                quality={75}
-                size="50vw"
-                style={{
-                  width: "50%",
-                  height: "auto",
-                }}
-              />
+              
+                <Image
+                  alt="Group Class inside the cave"
+                  src={Class}
+                  quality={75}
+                  size="50vw"
+                  style={{
+                    width: "50%",
+                    height: "auto",
+                  }}
+                />
             </li>
           </ul>
           <div className="body__container">
@@ -70,11 +57,18 @@ const Body = () => {
                 minerals penetrate your skin in the form of ions. This stimulation will cause natural cell growth in your living cell layers.
                 Bio-energetic weak points will be balanced and your body's energy flow will be activated. While anyone can benefit from a brine bath,
                 it is particularly soothing for those with:
+                <div className="body__text-container">
+                  <p className="body__text  body__paragraph">
+                    Various Skin Diseases, Rheumatism and joint diseases, A post-operative care regimen, Recurring infections Severe insect bites,
+                    blisters or wounds Skin irritations from poison oak, ivy or sumac.
+                  </p>
+                </div>
               </p>
             </div>
-            <div className="body__subtext-container">
-              <p className="body__subtext fact ">
-                <TipsAndUpdatesIcon />
+
+            <div className="events__fact-container fact">
+              <TipsAndUpdatesIcon />
+              <p className="events__fact">
                 WARNING: While brine baths have a positive effect on many ailments, they are also demanding on your circulatory system. If you suffer
                 from weak or poor heart circulation, always consult your doctor first.
               </p>
@@ -118,46 +112,35 @@ const Body = () => {
             </p>
           </div>
         </div>
-        
-          <div className="body__content">
-            <div className="body__image-container">
-              <Image
-                alt="Salty Aire Retreat Shop"
-                src={Shop}
-                quality={75}
-                size="50vw"
-                style={{
-                  width: "80%",
-                  height: "auto",
-                }}
-              />
-              <Image
-                alt="Group Class inside the cave"
-                src={Class}
-                quality={75}
-                size="50vw"
-                style={{
-                  width: "50%",
-                  height: "auto",
-                }}
-              />
-            </div>
-            <div className="body__paragraph-container">
-                  <h2 className="body__title">Nature's Healing Happiness</h2>
-              <p className="body__paragraph">
-                Himalayan Pink Salt Lamps (HSL) are celebrated for their natural healing properties and their ability to enhance overall well-being.
-                These remarkable creations of nature offer a multitude of benefits for our lives. HSL function as air purifiers by utilizing
-                hygroscopic properties to attract and trap contaminated water molecules from the environment, effectively removing cigarette smoke,
-                dust, allergens, and other pollutants. As the lamp heats up from the incandescent light source, the trapped particles remain locked in
-                the salt crystal. This purification process significantly reduces allergy symptoms and can even benefit individuals with asthma.
-              </p>
-              <p className="body__paragraph">
-                Moreover, HSL release negative ions, which promote healthier breathing by enhancing cilia activity and filtering foreign particles,
-                potentially safeguarding against airborne germs. These negative ions can also boost energy levels, akin to the invigorating effects of
-                spending time in natural settings rich in negative ions, counteracting the draining impact of positive ions on our bodies.
-              </p>
-            </div>
-          
+
+        <div className="body__content">
+          <div className="body__image-container">
+            <Image
+              alt="Salty Aire Retreat Shop"
+              src={Shop}
+              quality={75}
+              size="50vw"
+              style={{
+                width: "50vh",
+                height: "auto",
+              }}
+            />
+          </div>
+          <div className="body__paragraph-container">
+            <h2 className="body__title">Nature's Healing Happiness</h2>
+            <p className="body__paragraph">
+              Himalayan Pink Salt Lamps (HSL) are celebrated for their natural healing properties and their ability to enhance overall well-being.
+              These remarkable creations of nature offer a multitude of benefits for our lives. HSL function as air purifiers by utilizing hygroscopic
+              properties to attract and trap contaminated water molecules from the environment, effectively removing cigarette smoke, dust, allergens,
+              and other pollutants. As the lamp heats up from the incandescent light source, the trapped particles remain locked in the salt crystal.
+              This purification process significantly reduces allergy symptoms and can even benefit individuals with asthma.
+            </p>
+            <p className="body__paragraph">
+              Moreover, HSL release negative ions, which promote healthier breathing by enhancing cilia activity and filtering foreign particles,
+              potentially safeguarding against airborne germs. These negative ions can also boost energy levels, akin to the invigorating effects of
+              spending time in natural settings rich in negative ions, counteracting the draining impact of positive ions on our bodies.
+            </p>
+          </div>
         </div>
       </section>
       <section className="info">
@@ -166,14 +149,25 @@ const Body = () => {
         info__container info__container--first"
         >
           <div className="info__item info__item--first reiki">
-            <h2 className="info__subtitle">Reiki Services</h2>
-            <p className="info__text">Testing data</p>
+            <div className="info__content">
+              <h2 className="info__subtitle">Reiki Services</h2>
+              <p className="info__text">Energy Healing</p>
+            </div>
+            <p className="info__text">
+              Experience the transformative power of Reiki, a holistic healing practice that balances your energy and enhances your well-being. Book a
+              session today to alleviate stress, improve mental clarity, and restore harmony to your mind and body.
+            </p>
           </div>
         </div>
         <div className=" info__container info__container--second">
           <div className="info__item info__item--first kim">
-            <h2 className="info__subtitle">Going to Kim's </h2>
-            <p className="info__text">Testing data</p>
+            <div className="info__content">
+              <h2 className="info__subtitle">Going to Kim's </h2>
+              <p className="info__text">Come start your healing journey </p>
+            </div>
+            <p className="info__text">
+              Open your Faith, Mind, Power Center! Light Therapy, Pendulum, and Chakra classes are available seasonally! Contact us for more details!{" "}
+            </p>
           </div>
         </div>
         <div className="info__container info__container--third">
@@ -184,22 +178,23 @@ const Body = () => {
             </div>
             <p className="info__text">
               Receive the benefits of both modalities: yoga for mind, body and soul and salt for physical and spiritual healing
+              <p className="info__text">All practice levels</p>
             </p>
-            <p className="info__text">All practice levels</p>
           </div>
         </div>
       </section>
       <section className="events">
         <div className="events__title-container">
-          <h2 className="events__title">Events</h2>{" "}
-          {/* <iframe
-            className="events__frame"
-            src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSwcGj5RMKbrjCZt_Cx0VlVpXyKchXbufwjQcNcAC-Omv9ZEcxXB1lrQwO8VQfOD80WII-1wc9FlFVI/pubhtml?widget=true&amp;headers=false"
-            width=" 140%"
-            height="1050vh"
-            overflow="auto"
-            frameborder="0"
-          ></iframe> */}
+          <h2 className="body__title">Events</h2>{" "}
+          <div className="events__frame-container">
+            <iframe
+              className="events__frame"
+              src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTwxajben8bAl8w4pVVLYU3FyMSCtM47CcjppaIfo7Flq41B9uiPIaWnOO_2_OwPRU7GtjW_5seUQrb/pubhtml?widget=true&amp;headers=false"
+              width=" 140%"
+              height="1000vh"
+              overflow="auto"
+            ></iframe>
+          </div>
           <div className="events__fact-container fact">
             <TipsAndUpdatesIcon />
             <p className="events__fact">
@@ -225,6 +220,10 @@ const Body = () => {
             </a>
           </div>
         </div>
+      </section>
+      <section className="video">
+        <Video />
+
       </section>
       <section className="contact">
         <form className="contact__form" action="https://formsubmit.co/esmeraldassaltyairretreat@gmail.com" method="POST">

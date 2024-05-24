@@ -5,7 +5,7 @@
   @include desktop {
     display: flex;
     justify-content: space-between;
-    padding: 1rem;
+    padding: 2rem;
   }
   &__link-container {
     @include flex-row-between;
@@ -14,8 +14,8 @@
     flex-direction: row;
     align-items: center;
     gap: 3rem;
-    }
   }
+}
 }
 
 
@@ -23,4 +23,11 @@
 .nav-items {
   color: aliceblue;
   list-style: none;
+  padding-bottom: .5rem;
+    text-decoration: none;
+  transition: text-decoration 0.3s;
+  &:hover {
+    border-bottom: 4px solid #fff;
+    cursor: pointer;
+  }
 }
