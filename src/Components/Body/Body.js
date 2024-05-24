@@ -1,7 +1,7 @@
+
 import "../Body/Body.scss";
 import TipsAndUpdatesIcon from "@mui/icons-material/TipsAndUpdates";
 import Image from "next/image";
-import Lamps from "../../../public/assets/images/lamps.jpg";
 import Shop from "../../../public/assets/images/salt-shop.jpg";
 import Class from "../../../public/assets/images/cave_class.jpg";
 import Candle from "../../../public/assets/images/candle.jpg";
@@ -12,36 +12,23 @@ import Video from "../Video/Video";
 
 const Body = () => {
   const bookingUrl = "https://squareup.com/appointments/book/8c805443-b0f7-4e3a-b3fe-40e11b7419f5/ZTP8PZRX5ME1Y/start";
+
   return (
     <>
       <section className="body">
         <div className="body__info-container">
           <ul className="body__image-grid">
-       
-
             <li className="body__image-row">
               <Image
-                className="body__image"
-                alt="three salt lamps in a row"
-                src={Lamps}
+                alt="Group Class inside the cave"
+                src={Class}
                 quality={75}
                 size="50vw"
                 style={{
-                  width: "50%",
+                  width: "30vh",
                   height: "auto",
                 }}
-              />{" "}
-              
-                <Image
-                  alt="Group Class inside the cave"
-                  src={Class}
-                  quality={75}
-                  size="50vw"
-                  style={{
-                    width: "50%",
-                    height: "auto",
-                  }}
-                />
+              />
             </li>
           </ul>
           <div className="body__container">
@@ -223,7 +210,6 @@ const Body = () => {
       </section>
       <section className="video">
         <Video />
-
       </section>
       <section className="contact">
         <form className="contact__form" action="https://formsubmit.co/esmeraldassaltyairretreat@gmail.com" method="POST">

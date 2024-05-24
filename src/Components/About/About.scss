@@ -1,5 +1,4 @@
 @import "../../styles/mixins";
-@import "../../styles/variables";
 
 .about {
   &__container {
@@ -14,6 +13,7 @@
     &-item {
       @include desktop {
         @include flex-row-between;
+        height: 85vh
       }
       @include flex-center;
       padding: 2rem;
@@ -38,6 +38,7 @@
       @include flex-row-reverse;
       align-items: center;
       padding:1rem;
+      height: 80vh;
       &-text{
         padding: 1rem;
         line-height: 2rem;

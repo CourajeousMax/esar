@@ -33,7 +33,7 @@ const Hero = () => {
                 rel="noopener noreferrer"
               >
               <button className="hero__button ">
-                <h2 className="hero__button-text ">Book Now</h2>
+                Book Now
               </button>
                 
               </Link>
